@@ -47,6 +47,8 @@ def token_required(f):
 
     return decorated
 
+
+'return users'
 @app.route('/user', methods=['GET'])
 @token_required
 def get_all_users(current_user):
